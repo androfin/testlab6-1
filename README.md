@@ -40,3 +40,4 @@ Your mission as the Junior DevSecOps Engineer is to turn this repo into a **safe
 ```bash
 pip install -r requirements.txt
 uvicorn app.main:app --reload --port 8000
+
