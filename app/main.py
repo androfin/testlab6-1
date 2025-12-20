@@ -182,3 +182,4 @@ async def on_error(request: Request, exc: Exception):
     # HIGH
     return PlainTextResponse(traceback.format_exc(), status_code=500, headers=_headers())
     # FIX: return PlainTextResponse("Internal error", status_code=500, headers=_headers())
+    
