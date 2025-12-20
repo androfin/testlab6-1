@@ -1,0 +1,53 @@
+openapi: 3.0.3
+info:
+  title: TestLab6-1 Payments API
+  version: "1.0.0"
+paths:
+  /health:
+    get:
+      summary: Health
+      responses:
+        "200":
+          description: OK
+  /v1/payments:
+    post:
+      summary: Create payment
+      responses:
+        "200":
+          description: OK
+  /v1/payments/{payment_id}:
+    get:
+      summary: Get payment by id
+      parameters:
+        - name: payment_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+  /v1/proxy/fetch:
+    post:
+      summary: Fetch external url
+      responses:
+        "200":
+          description: OK
+  /v1/ui/receipt:
+    get:
+      summary: Receipt page
+      responses:
+        "200":
+          description: OK
+  /v1/admin/export:
+    post:
+      summary: Admin export
+      responses:
+        "200":
+          description: OK
+  /v1/uploads:
+    post:
+      summary: Upload file
+      responses:
+        "200":
+          description: OK
